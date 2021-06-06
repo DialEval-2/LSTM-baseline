@@ -1,5 +1,5 @@
 
-This repo is a LSTM+BoW baseline model for [NTCIR-15 Dialogue Evaluation Task (DialEval-1)](http://sakailab.com/dialeval1/)
+This repo is a LSTM+BoW baseline model for [NTCIR-16 Dialogue Evaluation Task (DialEval-2)](http://sakailab.com/dialeval2/)
 
 
 
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 python -m spacy download en  
 ```
 
-Note: To obtain the dataset of DialEval-1, please check https://dialeval-1.github.io/dataset/.
+Note: To obtain the dataset of DialEval-1, see [here](https://dialeval-2.github.io/DCH-2/).
 
 ### Train all tasks
 This command will train 4 models for both nugget detection and dialogue quality tasks for both Chinese and English training dataset.

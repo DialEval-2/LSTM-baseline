@@ -179,7 +179,7 @@ class Baidu(Vocab):
 
 
 class SpacyTokenizer(object):
-    def __init__(self, lang="en"):
+    def __init__(self, lang="en_core_web_sm"):
         self.nlp = spacy.load(lang)
 
     def __call__(self, seq):

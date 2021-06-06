@@ -65,7 +65,7 @@ class Vocab(object):
 
         if tokenizer is None:
             if self.language is Language.english:
-                self.tokenizer = get_tokenizer("spacy:en")
+                self.tokenizer = get_tokenizer("spacy:en_core_web_sm")
 
             elif self.language is Language.chinese:
                 self.tokenizer = get_tokenizer("jieba:lcut_for_search")

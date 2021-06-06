@@ -11,7 +11,7 @@ from data import Task
 class Model(object):
     def __init__(self, embedding, task, params, session=None, graph=None):
         self.graph = graph or tf.get_default_graph()
-        self.session = session or tf.Session()
+        self.session = session or tf.Session(tf.Session(config=tf.ConfigProto(gpu_options=tf.GPUOptions(per_process_gpu_memory_fraction=0.9),allow_soft_placement=True)))
         self.task = task
         self.turns = tf.placeholder(
             shape=(None, None, None), dtype=tf.int32, name="turns")
